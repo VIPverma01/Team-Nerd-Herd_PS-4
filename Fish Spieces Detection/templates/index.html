@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fishSpecies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FishCatcher.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LogIn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SignUp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AboutUs</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    <!-- end of navbar -->
+    <!-- start of banner -->
+    <div>
+        <h1 style="text-align:center ; padding-top:10px" > Codeutsava Hackathon 2022</h1>
+        <h2 style="text-align:center">Image-based recognition of Fish species and estimation of their proportion</h2>
+    </div>
+    <!-- end of banner -->
+
+    <!-- start of image upload -->
+
+<form  method="post" enctype=multipart/form-data>
+
+
+
+      <div class="row" id="resultBox" style="min-height: 450px;display:flex; justify-content:space-around;margin-top:2%;align-items: center;background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1578507065211-1c4e99a5fd24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
+        <div class="col-md-6" id="uploadForm" style="text-align: center;">
+
+
+
+                <p>    <input type="file" name="file"  class="form-control-file" id="file" style="height:0.7%;width:45% ;margin-top:3.5%;border-radius: 5px; border:solid white 1px;font-size: 2rem;cursor: pointer;color:white" value="Upload file"></p>
+                <!-- <p><label for="file" style="height:0.7%;width:45% ;margin-top:3.5%;border-radius: 5px; border:solid white 1px;font-size: 2rem;cursor: pointer;color:white">Upload Image</label></p> -->
+                <p><img id="output" width=70%  /></p>
+    
+
+        </div>
+
+        <div class="col-md-6" id="uploadButton" style="text-align:center">
+          <button type="submit" id="imageUploadButton" class="btn btn-outline-light" style="height:0.7%;width:45%;font-size:2rem" >Get Results!</button>
+        </div>
+
+      <!-- <img src='static/image0.jpg' class="col-md-4" style="margin:100px 100px 100px 100px" /> -->
+
+    </div>
+</form>
+
+    <!-- end of image upload -->
+
+    <div
+    style="margin-top: 30px;;text-align: center;background-color: #302f2f; color: aliceblue;  width: 100%;">
+    <div style="font-size:25px">Team Members</div>
+    <div style="margin-top: 10px;display:flex;flex-wrap: wrap;;justify-content:space-around">
+    <h4>Saurabh Mishra</h4>
+    <h4>Mahim Mittal</h4>
+    <h4>Tushar Singh</h4>
+    <h4>Vipul Verma</h4>
+    <h4>Vanshika Tiwari</h4>
+    <h4>Neelesh Kumar</h4>
+  </div>
+
+
+
+
+
+</body>
+</html>
